@@ -1,0 +1,42 @@
+.works {
+    padding: 20px;
+    background-color: #111;
+    color: white;
+    text-align: center;
+    height: 100vh; /* Ocupa toda la pantalla */
+    background: url('../../assets/img/thirdbackground.jpeg') no-repeat center center/cover;
+  }
+  
+  .works-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .work-item {
+    flex: 0 0 auto;
+    width: 30rem;
+    scroll-snap-align: start;
+    background: #222;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.3s;
+  }
+  
+  .work-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .work-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .work-info {
+    padding: 10px 0;
+  }
+  

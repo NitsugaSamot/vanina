@@ -1,0 +1,56 @@
+/* stylesBio.css */
+
+.bio {
+    padding: 2rem;
+    background: #f5f5f5;
+    height: 100vh; /* Ocupa toda la pantalla */
+    background: url('../../assets/img/background.jpg') no-repeat center center/cover;
+    /* align-items: center;
+    justify-content: center;
+    text-align: center; */
+
+  }
+  
+  .bio h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Diseño tipo Pinterest */
+  .bio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Tarjetas de contenido */
+  .bio-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .bio-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .bio-item img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .bio-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  

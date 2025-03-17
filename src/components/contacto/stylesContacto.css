@@ -1,0 +1,40 @@
+.contacto {
+    padding: 40px;
+    background-color: #111;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contacto h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #f9a826;
+  }
+  
+  .contacto p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #bbb;
+  }
+  
+  .contact-form {
+    text-align: left;
+  }
+  
+  .submit-button {
+    width: 100%;
+    background-color: #f9a826;
+    border: none;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #e5941c;
+  }
+  
