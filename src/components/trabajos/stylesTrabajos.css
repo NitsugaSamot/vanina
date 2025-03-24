@@ -4,7 +4,8 @@
     color: white;
     text-align: center;
     height: 100vh; /* Ocupa toda la pantalla */
-    background: url('../../assets/img/thirdbackground.jpeg') no-repeat center center/cover;
+    /* background: url('../../assets/img/thirdbackground.jpeg') no-repeat center center/cover; */
+    background: var(--primary-color);
   }
   
   .works-container {
@@ -20,7 +21,7 @@
     flex: 0 0 auto;
     width: 30rem;
     scroll-snap-align: start;
-    background: #222;
+    background: var(--text-color);
     padding: 10px;
     border-radius: 10px;
     text-align: left;

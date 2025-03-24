@@ -4,8 +4,15 @@
   font-weight: 400;
 
   /* color-scheme: light dark; */
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #B76E64;
+  background-color: #B76E64;
+  --primary-color: #B76E64; /* Marrón rosado */
+  --secondary-color: #C47B75; /* Rosa quemado */
+  --accent-color: #D9A5A0; /* Rosa pastel */
+  --background-color: #F5C6A5; /* Melocotón claro */
+  --text-color: #8B5E58; /* Marrón suave */
+  --card-bg: #FFE0C2; /* Crema */
+  --card-border: #E0A899; /* Rosa tenue */
 
   /* font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,6 +21,8 @@
 }
 
 body {
+  /* background: var(--background-color); */
+  background: var(--primary-color);
   margin: 0;
   /* display: flex; */
   place-items:inherit;
