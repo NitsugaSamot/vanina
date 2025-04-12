@@ -1,57 +1,116 @@
-/* stylesBio.css */
-
 .bio {
-    padding: 2rem;
-    background: #f5f5f5;
-    height: 100vh; /* Ocupa toda la pantalla */
-    /* background: url('../../assets/img/background.jpg') no-repeat center center/cover; */
-    background: var(--primary-color);
-    /* align-items: center;
-    justify-content: center;
-    text-align: center; */
+  padding: 6rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  /* color: #333; */
+  color: #360d0d;
+}
 
+.name-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #666;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.location {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.bio-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+
+.bio-image {
+  flex: 1 1 40%;
+  max-width: 400px;
+  padding: 1rem;
+}
+
+.bio-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.bio-image.left {
+  order: 0;
+}
+
+.bio-image.right {
+  order: 1;
+}
+
+.bio-text {
+  flex: 1 1 60%;
+  padding: 1rem;
+}
+
+.bio-text h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.filmography {
+  margin-top: 3rem;
+  background: #f3aeae;
+  padding: 2rem;
+  border-radius: 8px;
+  color: #360d0d;
+}
+
+.filmography h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.filmography ul {
+  padding-left: 1.5rem;
+}
+
+.filmography li {
+  margin-bottom: 0.6rem;
+}
+
+.bio-message {
+  margin-top: 2rem;
+  font-style: italic;
+  text-align: center;
+  color: #444;
+  font-size: 1.1rem;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .bio-block {
+    flex-direction: column;
   }
-  
-  .bio h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #333;
+
+  .bio-image {
+    order: 0 !important;
+    max-width: 100%;
   }
-  
-  /* Diseño tipo Pinterest */
-  .bio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: auto;
+
+  .bio-text {
+    order: 1;
   }
-  
-  /* Tarjetas de contenido */
-  .bio-item {
-    background: var(--card-bg);
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px var(--card-border);
-    transition: transform 0.3s ease;
-  }
-  
-  .bio-item:hover {
-    transform: translateY(-5px);
-  }
-  
-  .bio-item img {
-    width: 100%;
-    border-radius: 8px;
-    object-fit: cover;
-  }
-  
-  .bio-item p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #555;
-    margin-top: 10px;
-  }
-  
-  
+}
